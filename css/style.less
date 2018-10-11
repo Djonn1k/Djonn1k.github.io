@@ -1,0 +1,444 @@
+/*============    ШРИФТЫ    ===========*/
+
+@font-face {
+    font-family: 'GothamProBold';
+    src: url('fonts/GothamProBold.eot');
+    src: url('fonts/GothamProBold.eot') format('embedded-opentype'),
+    url('fonts/GothamProBold.woff2') format('woff2'),
+    url('fonts/GothamProBold.woff') format('woff'),
+    url('fonts/GothamProBold.ttf') format('truetype'),
+    url('fonts/GothamProBold.svg#GothamProBold') format('svg');
+}
+
+@font-face {
+    font-family: 'GothamProLight';
+    src: url('fonts/GothamProLight.eot');
+    src: url('fonts/GothamProLight.eot') format('embedded-opentype'),
+    url('fonts/GothamProLight.woff2') format('woff2'),
+    url('fonts/GothamProLight.woff') format('woff'),
+    url('fonts/GothamProLight.ttf') format('truetype'),
+    url('fonts/GothamProLight.svg#GothamProLight') format('svg');
+}
+
+@font-face {
+    font-family: 'GothamProMedium';
+    src: url('fonts/GothamProMedium.eot');
+    src: url('fonts/GothamProMedium.eot') format('embedded-opentype'),
+    url('fonts/GothamProMedium.woff2') format('woff2'),
+    url('fonts/GothamProMedium.woff') format('woff'),
+    url('fonts/GothamProMedium.ttf') format('truetype'),
+    url('fonts/GothamProMedium.svg#GothamProMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'GothamProRegular';
+    src: url('fonts/GothamProRegular.eot');
+    src: url('fonts/GothamProRegular.eot') format('embedded-opentype'),
+    url('fonts/GothamProRegular.woff2') format('woff2'),
+    url('fonts/GothamProRegular.woff') format('woff'),
+    url('fonts/GothamProRegular.ttf') format('truetype'),
+    url('fonts/GothamProRegular.svg#GothamProRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyrBold';
+    src: url('fonts/HelveticaNeueCyrBold.eot');
+    src: url('fonts/HelveticaNeueCyrBold.eot') format('embedded-opentype'),
+    url('fonts/HelveticaNeueCyrBold.woff2') format('woff2'),
+    url('fonts/HelveticaNeueCyrBold.woff') format('woff'),
+    url('fonts/HelveticaNeueCyrBold.ttf') format('truetype'),
+    url('fonts/HelveticaNeueCyrBold.svg#HelveticaNeueCyrBold') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyrLight';
+    src: url('fonts/HelveticaNeueCyrLight.eot');
+    src: url('fonts/HelveticaNeueCyrLight.eot') format('embedded-opentype'),
+    url('fonts/HelveticaNeueCyrLight.woff2') format('woff2'),
+    url('fonts/HelveticaNeueCyrLight.woff') format('woff'),
+    url('fonts/HelveticaNeueCyrLight.ttf') format('truetype'),
+    url('fonts/HelveticaNeueCyrLight.svg#HelveticaNeueCyrLight') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyrMedium';
+    src: url('fonts/HelveticaNeueCyrMedium.eot');
+    src: url('fonts/HelveticaNeueCyrMedium.eot') format('embedded-opentype'),
+    url('fonts/HelveticaNeueCyrMedium.woff2') format('woff2'),
+    url('fonts/HelveticaNeueCyrMedium.woff') format('woff'),
+    url('fonts/HelveticaNeueCyrMedium.ttf') format('truetype'),
+    url('fonts/HelveticaNeueCyrMedium.svg#HelveticaNeueCyrMedium') format('svg');
+}
+
+/*============  ОБЩИЕ    ===========*/
+
+.gbold {
+    font-family: 'GothamProBold';
+}
+
+.gmed {
+    font-family: 'GothamProMedium';
+}
+
+.glight {
+    font-family: 'GothamProLight';
+}
+
+.greg {
+    font-family: 'GothamProRegular';
+}
+
+.hbold {
+    font-family: 'HelveticaNeueCyrBold';
+}
+
+.hmed {
+    font-family: 'HelveticaNeueCyrMedium';
+}
+
+.hlight {
+    font-family: 'HelveticaNeueCyrLight';
+}
+
+.grad {
+    background: linear-gradient(38deg, #543beb, #623ff8, #8a61f2);
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    -o-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+
+a {
+    text-decoration: none !important;
+    -moz-transition: color 0.2s 0.02s ease;
+    -o-transition: color 0.2s 0.02s ease;
+    -webkit-transition: color 0.2s 0.02s ease;
+    color: #130ef9;
+}
+
+button,
+input:focus {
+    outline: none !important;
+}
+
+.skew {
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    -o-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+}
+
+.skew > * {
+    -webkit-transform: skewX(15deg);
+    -moz-transform: skewX(15deg);
+    -ms-transform: skewX(15deg);
+    -o-transform: skewX(15deg);
+    transform: skewX(15deg);
+}
+
+
+/*============    ШАПКА    ===========*/
+
+#head_block {
+    background-color: #fff;
+    .head {
+        padding-top: 25px;
+        padding-bottom: 12px;
+        .logo {
+            a {
+                .gbold;
+                color: #000;
+                font-size: 21px;
+            }
+            p {
+                .hlight;
+                color: #262626;
+                font-size: 15px;
+            }
+        }
+        .h_main {
+            p {
+                .glight;
+                font-size: 15px;
+                text-transform: uppercase;
+                span {
+                    margin-top: 12px;
+                    .grad;
+                    color: #fff;
+                }
+            }
+        }
+        .contact {
+            text-align: right;
+            img {
+                width: 22px;
+                height: 22px;
+                opacity: 0.3;
+                &:hover{
+                  opacity: 1;  
+                }
+            }
+            .phone {
+                color: #000;
+                .hmed;
+                font-size: 17px;
+                padding-left: 10px;
+            }
+            button {
+                background: linear-gradient(38deg, #543beb, #623ff8, #8a61f2);
+                border: none;
+                border-radius: 40px;
+                padding: 9px 46px;
+                color: #fff;
+                margin-top: 20px;
+                .glight;
+                font-size: 16px;
+                box-shadow: 0px 3px 12px #8c79f1;
+                &:hover {
+                    background: linear-gradient(38deg, #30276d, #7d72af, #43278c) !important;
+                }
+            }
+        }
+    }
+}
+
+/*============    ГЛАВНЫЙ БЛОК    ===========*/
+
+#main {
+    background: url(../img/main_bg.jpg) no-repeat center center;
+    background-size: cover;
+    padding-bottom: 30px;
+    padding-top: 65px;
+    .main_block {
+        h1 {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 29px;
+            .gbold;
+            text-align: center;
+            span {
+                .grad;
+            }
+        }
+        p {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 29px;
+            .gbold;
+            text-align: center;
+        }
+    }
+    .advantages {
+
+        .h_adv {
+            img {
+                margin-top: 24px;
+            }
+            h2 {
+                color: #fff;
+                font-size: 20px;
+                .gmed;
+                margin-left: 5px;
+                span {
+                    .grad;
+                }
+            }
+        }
+        .adv_list {
+            background-color: rgba(11, 10, 10, 0.8);
+            padding: 25px 40px;
+            margin-top: 27px;
+            border-top: 6px solid #fff;
+            p {
+                color: #fff;
+                .glight;
+                font-size: 18px;
+                span {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+
+/*============    ПРОВЕРКА    ===========*/
+
+#check {
+    background-color: #f5f5f5;
+    .h_check {
+        h2 {
+            padding-top: 43px;
+            padding-bottom: 55px;
+            .gbold;
+            font-size: 26px;
+            color: #981fde;
+            text-transform: uppercase;
+        }
+    }
+    .list_check {
+        .p1 {
+            .greg;
+            font-size: 18px;
+            color: #000;
+            border-left: 6px solid #0000ff;
+            padding-left: 20px;
+        }
+        .p2 {
+            .greg;
+            font-size: 18px;
+            color: #000;
+            border-left: 6px solid #f82323;
+            padding-left: 20px;
+        }
+    }
+    .but_block {
+        margin-bottom: 37px;
+        button {
+            background: linear-gradient(38deg, #543beb, #623ff8, #8a61f2);
+            border: none;
+            padding: 9px 46px;
+            color: #fff;
+            margin-top: 20px;
+            .glight;
+            font-size: 16px;
+            box-shadow: 0px 3px 12px #8c79f1;
+            &:first-child {
+                margin-right: 20px;
+            }
+            &:hover {
+                background: linear-gradient(38deg, #30276d, #7d72af, #43278c) !important;
+            }
+        }
+    }
+}
+
+/*============    ФОРМА    ===========*/
+
+.form_block {
+    form {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-bottom: 50px;
+        background-color: #fff;
+        input {
+            border: 1px solid #0000ff;
+            border-radius: 40px;
+            padding: 9px 26px;
+            color: #c8c7c7;
+            .glight;
+            font-size: 16px;
+            &:focus{
+                box-shadow: 0px 3px 10px #0000ff;
+                color: #4d4d52;
+            }
+        }
+        button {
+            background: linear-gradient(38deg, #f1354f, #fe6e7b);
+            border: none;
+            border-radius: 40px;
+            padding: 9px 75px;
+            color: #fff;
+            .glight;
+            font-size: 16px;
+            &:hover {
+                background: linear-gradient(38deg, #e09da6, #e22233);
+                box-shadow: 0px 3px 10px #e22233;
+            }
+        }
+    }
+}
+
+
+/*============    ПОДВАЛ    ===========*/
+
+#footer{
+    .dev{
+        background-color: #f5f5f5;
+        padding-bottom: 10px;
+        p{
+            .hlight;
+            font-size: 18px;
+        }
+        a{
+           .gbold;
+            color: #000;
+            &:hover{
+                color: #825af3;
+            }
+        }
+    }
+}
+
+
+/*============    ФОРМЫ    ===========*/
+
+.modal-content{
+    margin-top: 30%;
+    background-color: #fff;
+    border-radius: 0;
+    border: none;
+}
+
+.modal-header{
+    border-bottom: none;
+    .h5{
+        .greg;
+        font-size: 18px;
+        padding-top: 20px;
+        color: #000;
+    }
+    .close{
+        font-size: 30px;
+        color: #f33f57;
+    }
+}
+
+.modal-body{
+    input {
+            border: 1px solid #0000ff;
+            border-radius: 40px;
+            padding: 20px 20px;
+            color: #c8c7c7;
+            .glight;
+            font-size: 16px;
+            margin-bottom: 20px;
+            &:focus{
+                color: #4d4d52;
+            }
+        }
+        button {
+            background: linear-gradient(38deg, #f1354f, #fe6e7b);
+            border: none;
+            border-radius: 40px;
+            padding: 12px 40px;
+            color: #fff;
+            .glight;
+            font-size: 16px;
+            margin-bottom: 20px;
+            &:hover {
+                background: linear-gradient(38deg, #e09da6, #e22233);
+            }
+        }
+}
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ШРИФТЫ    ===========*/
+
+/*============    ПОДВАЛ    ===========*/
+
+/*============    	ВСПЛЫВАЮЩИЕ ОКНА    ===========*/
+
+/*============    	АДАПТИВ    ===========*/
+
+@import "media.less";
